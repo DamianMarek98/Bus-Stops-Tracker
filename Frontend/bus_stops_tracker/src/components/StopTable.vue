@@ -16,20 +16,20 @@ export default {
     return {
       columns: [
         {
-          label: "Numer linii",
+          label: "Line number",
           field: "routeId",
         },
         {
-          label: "Kierunek",
+          label: "Direction",
           field: "headsign"
         },
         {
-          label: "Szacowany czas przyjazdu",
+          label: "Estimated time",
           field: "estimatedTime",
           dateOutputFormat: 'HH:MM:SS',
         },
         {
-          label: "Czas z rozkładu",
+          label: "Theoretical time",
           field: "theoreticalTime",
           dateOutputFormat: 'HH:MM:SS',
         },
