@@ -10,12 +10,14 @@
 <script>
 import Login from "@/components/Login";
 import UserView from "@/components/UserView";
+import { store }  from "../store/store";
 
 export default {
   name: 'App',
+  store,
   components: {
     UserView,
-    Login,
+    Login
   },
   methods:{
   }

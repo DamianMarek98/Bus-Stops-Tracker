@@ -31,7 +31,7 @@ module.exports.addStop = (username, stopId) => {
             if (found === undefined) {
                 result.stops.push(busStopId);
                 result.save();
-                return true;
+                return result.stops;
             }
         }
 
@@ -51,7 +51,7 @@ module.exports.removeStop = (username, stopId) => {
                 if (i > -1) {
                     result.stops.splice(i, 1);
                     result.save();
-                    return true;
+                    return result.stops;
                 }
             }
         }

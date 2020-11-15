@@ -1,17 +1,19 @@
 <template>
   <div>
     <NavBar></NavBar>
-    <StopTable v-for="stopId in JSON.parse($cookies.get('stopsId'))" v-bind:stop-id=stopId></StopTable>
+    <StopManagement></StopManagement>
+    <StopTable v-for="stopId in JSON.parse($cookies.get('stopsId'))" :key=stopId v-bind:stop-id=stopId></StopTable>
   </div>
 </template>
 a
 <script>
 import NavBar from "@/components/NavBar";
 import StopTable from "@/components/StopTable";
+import StopManagement from "@/components/StopManagement";
 
 export default {
   name: "UserView",
-  components: {NavBar, StopTable},
+  components: {StopManagement, NavBar, StopTable},
 }
 </script>
 
