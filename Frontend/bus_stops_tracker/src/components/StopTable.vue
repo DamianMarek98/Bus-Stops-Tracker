@@ -26,11 +26,15 @@ export default {
         {
           label: "Estimated time",
           field: "estimatedTime",
+          type: 'date',
+          dateInputFormat: 'HH:MM',
           dateOutputFormat: 'HH:MM:SS',
         },
         {
           label: "Theoretical time",
           field: "theoreticalTime",
+          type: 'date',
+          dateInputFormat: 'HH:MM',
           dateOutputFormat: 'HH:MM:SS',
         },
       ],
